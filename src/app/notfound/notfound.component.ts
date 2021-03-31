@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotfoundComponent implements OnInit {
 
-  year: Number = new Date().getFullYear();
+  year: number = new Date().getFullYear();
 
   constructor() { }
 
