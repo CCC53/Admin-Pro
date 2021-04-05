@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../../services/settings.service';
+
+declare function customInit(): void;
 
 @Component({
   selector: 'app-pages',
@@ -8,10 +11,13 @@ import { Component, OnInit } from '@angular/core';
 export class PagesComponent implements OnInit {
 
   year: number = new Date().getFullYear();
+  theme: string | null=null;
 
-  constructor() { }
+  constructor(private settingsService: SettingsService) { }
 
   ngOnInit(): void {
+    this.settingsService.getTheme();
+    customInit();
   }
 
 }
