@@ -12,7 +12,9 @@ export class SidebarService {
       options: [
         { title: 'Dashboard', url: '/' },
         { title: 'ProgessBar', url: 'progress' },
-        { title: 'Graficas', url: 'charts' }
+        { title: 'Graficas', url: 'charts' },
+        { title: 'Promesas', url: 'promises' },
+        { title: 'RXJS', url: 'rxjs' }
       ]
     }
   ]

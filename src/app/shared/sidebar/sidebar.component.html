@@ -20,7 +20,7 @@
                     <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i [class]="item.icon"></i><span class="hide-menu">{{item.title}}
                         <span class="label label-rouded label-themecolor pull-right">{{item.options.length}}</span></span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li *ngFor="let option of item.options"><a [routerLink]="option.url">{{option.title}}</a></li>
+                        <li *ngFor="let option of item.options"><a [routerLink]="option.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{option.title}}</a></li>
                     </ul>
                 </li>
             </ul>
